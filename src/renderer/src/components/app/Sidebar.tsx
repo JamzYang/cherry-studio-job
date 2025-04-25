@@ -152,7 +152,12 @@ const MainMenus: FC = () => {
     interviewer: '/interviewer' // Add interviewer path
   }
 
-  return sidebarIcons.visible.map((icon) => {
+  // Ensure 'interviewer' is always included in the visible icons list
+  const visibleIcons = sidebarIcons.visible.includes('interviewer')
+    ? sidebarIcons.visible
+    : [...sidebarIcons.visible, 'interviewer'];
+
+  return visibleIcons.map((icon) => {
     const path = pathMap[icon]
     const isActive = path === '/' ? isRoute(path) : isRoutes(path)
 

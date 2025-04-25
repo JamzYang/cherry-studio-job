@@ -6,13 +6,13 @@
 
 ## 开发计划步骤
 
-- [ ] 1.  **修改侧边栏导航 (`src/renderer/src/components/app/Sidebar.tsx`)**:
+- [x] 1.  **修改侧边栏导航 (`src/renderer/src/components/app/Sidebar.tsx`)**:
     *   在 `MainMenus` 组件中，找到 `sidebarIcons.visible` 数组，添加一个新的标识符 `'interviewer'`。
     *   在 `iconMap` 对象中，为 `'interviewer'` 添加一个合适的 Lucide React 图标，例如 `<Mic size={18} className="icon" />`。
     *   在 `pathMap` 对象中，为 `'interviewer'` 添加对应的路由路径 `'/interviewer'`。
     *   在 `src/renderer/src/i18n/locales/zh-cn.json` 文件中，为 `'interviewer.title'` 添加翻译文本“面试官”。
 
-- [ ] 2.  **添加面试官页面路由 (`src/renderer/src/App.tsx`)**:
+- [x] 2.  **添加面试官页面路由 (`src/renderer/src/App.tsx`)**:
     *   在 `src/renderer/src/App.tsx` 文件中，导入即将创建的 `InterviewerPage` 组件。
     *   在 `<Routes>` 组件内部，添加一个新的 `<Route>`，设置 `path="/interviewer"` 并将 `element` 设置为 `<InterviewerPage />`。
 
