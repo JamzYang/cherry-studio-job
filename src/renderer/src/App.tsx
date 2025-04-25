@@ -16,6 +16,7 @@ import AgentsPage from './pages/agents/AgentsPage'
 import AppsPage from './pages/apps/AppsPage'
 import FilesPage from './pages/files/FilesPage'
 import HomePage from './pages/home/HomePage'
+import InterviewerPage from './pages/interviewer/InterviewerPage' // Import InterviewerPage
 import KnowledgePage from './pages/knowledge/KnowledgePage'
 import PaintingsPage from './pages/paintings/PaintingsPage'
 import SettingsPage from './pages/settings/SettingsPage'
@@ -41,6 +42,7 @@ function App(): React.ReactElement {
                       <Route path="/files" element={<FilesPage />} />
                       <Route path="/knowledge" element={<KnowledgePage />} />
                       <Route path="/apps" element={<AppsPage />} />
+                      <Route path="/interviewer" element={<InterviewerPage />} /> {/* Add InterviewerPage route */}
                       <Route path="/settings/*" element={<SettingsPage />} />
                     </Routes>
                   </HashRouter>

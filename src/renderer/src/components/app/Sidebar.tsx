@@ -17,6 +17,7 @@ import {
   Languages,
   LayoutGrid,
   MessageSquareQuote,
+  Mic, // Add Mic icon
   Moon,
   Palette,
   Settings,
@@ -136,7 +137,8 @@ const MainMenus: FC = () => {
     translate: <Languages size={18} className="icon" />,
     minapp: <LayoutGrid size={18} className="icon" />,
     knowledge: <FileSearch size={18} className="icon" />,
-    files: <Folder size={17} className="icon" />
+    files: <Folder size={17} className="icon" />,
+    interviewer: <Mic size={18} className="icon" /> // Add interviewer icon
   }
 
   const pathMap = {
@@ -146,7 +148,8 @@ const MainMenus: FC = () => {
     translate: '/translate',
     minapp: '/apps',
     knowledge: '/knowledge',
-    files: '/files'
+    files: '/files',
+    interviewer: '/interviewer' // Add interviewer path
   }
 
   return sidebarIcons.visible.map((icon) => {
